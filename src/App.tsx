@@ -1,9 +1,15 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom'
 
-function App() {
+import Routes from './routes'
+
+
+const App: React.FC = () => {
   return (
-    <h1>Github Explorer</h1>
-  );
+    <BrowserRouter>
+    <Routes />
+    </BrowserRouter>
+    );
 }
 
 export default App;
